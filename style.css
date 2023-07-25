@@ -19,10 +19,10 @@ body {
     background-attachment: fixed;
 }
 
-.container-banner {
+.container-banner {}
+
+.img-overlay {
     width: auto;
     height: 373px;
-    color: var(--color-black);
-    background-image: url();
+    background: linear-gradient(to top, #00000033, #00000033), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
 }
-
