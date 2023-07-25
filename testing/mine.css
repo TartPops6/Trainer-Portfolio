@@ -1,89 +1,24 @@
-/* For Imports */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Press Start 2P", cursive;
-}
-
-body {
-  /* Colors Here */
-  --color-black: #000000;
-  --color-black-20: #00000033;
-  --color-white: #FFFFFF;
-  height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/img/Background.png);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.container-banner {
-  background: linear-gradient(to top, var(--color-black-20), var(--color-black-20)), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
-  height: 373px;
-  width: 100%;
-  margin-bottom: 3%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.texts-container {
-  width: 824px;
-  height: 300.93px;
-  text-align: center;
-  padding: 3%;
-}
-
-.texts-up {
-  width: 717px;
-  height: auto;
-  font-size: 64px;
-  color: var(--color-white);
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.texts-bottom {
-  width: 750px;
-  height: auto;
-  font-size: 45px;
-  color: var(--color-white);
-  margin: auto;
-  margin-top: 6%;
-}
-
-.img-container {
-  width: 480px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.sprite-container {
-  width: 100%;
-  height: 100%;
-  margin-left: 50px;
-  background-image: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Trainer%20Card/WOW%20POG.png);
-}
-
-/* Pokemon Cards testing */
 :root {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
   --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
   --charizard1: #fac;
   --charizard2: #ddccaa;
-  --charizardfront: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Pokemons/Empoleon.webp);
+  --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);
+  --pika1: #54a29e;
+  --pika2: #a79d66;
+  --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
+  --eevee1: #efb2fb;
+  --eevee2: #acc6f8;
+  --eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
+  --mewtwo1: #efb2fb;
+  --mewtwo2: #acc6f8;
+  --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
 }
 
 .card {
   width: 71.5vw;
   height: 100vw;
-  /* width: clamp(200px, 61vh, 18vw); */
-  /* height: clamp(280px, 85vh, 25.2vw); */
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -104,10 +39,6 @@ body {
 
 @media screen and (min-width: 600px) {
   .card {
-    /* width: 61vh; */
-    /* height: 85vh; */
-    /* max-width: 500px; */
-    /* max-height: 700px; */
     width: clamp(12.9vw, 61vh, 18vw);
     height: clamp(18vw, 85vh, 25.2vw);
   }
@@ -117,10 +48,31 @@ body {
   box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
 }
 
-.card.empoleon {
+.card.charizard {
   --color1: var(--charizard1);
   --color2: var(--charizard2);
   --front: var(--charizardfront);
+}
+
+.card.pika {
+  --color1: var(--pika1);
+  --color2: var(--pika2);
+  --front: var(--pikafront);
+}
+
+.card.mewtwo {
+  --color1: var(--mewtwo1);
+  --color2: var(--mewtwo2);
+  --front: var(--mewtwofront);
+}
+
+.card.eevee {
+  --color1: #ec9bb6;
+  --color2: #ccac6f;
+  --color3: #69e4a5;
+  --color4: #8ec5d6;
+  --color5: #b98cce;
+  --front: var(--eeveefront);
 }
 
 .card:before,
@@ -304,3 +256,198 @@ body {
     transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
   }
 }
+
+.card.eevee:hover {
+  box-shadow: 0 0 30px -5px white, 0 0 10px -2px white, 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.card.eevee:hover:before,
+.card.eevee.active:before {
+  background-image: linear-gradient(115deg, transparent 20%, var(--color1) 36%, var(--color2) 43%, var(--color3) 50%, var(--color4) 57%, var(--color5) 64%, transparent 80%);
+}
+
+.demo .card {
+  background-image: var(--back);
+  font-size: 2vh;
+}
+
+.demo .card>span {
+  position: relative;
+  top: 45%;
+}
+
+.demo .card:nth-of-type(1),
+.demo .card:nth-of-type(2),
+.demo .card:nth-of-type(3) {
+  width: 20vh;
+  height: 27.5vh;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 25px 15px -10px rgba(0, 0, 0, 0.5);
+  animation: none;
+}
+
+.demo .card:nth-of-type(1):before,
+.demo .card:nth-of-type(1):after,
+.demo .card:nth-of-type(2):before,
+.demo .card:nth-of-type(2):after,
+.demo .card:nth-of-type(3):before,
+.demo .card:nth-of-type(3):after {
+  animation: none;
+}
+
+.demo .card:nth-of-type(1):before,
+.demo .card:nth-of-type(1):after {
+  display: none;
+}
+
+.demo .card:nth-of-type(2) {
+  background: none;
+}
+
+.demo .card:nth-of-type(2):before {
+  display: none;
+}
+
+.demo .card:nth-of-type(3) {
+  background: none;
+}
+
+.demo .card:nth-of-type(3):after {
+  display: none;
+}
+
+.operator {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 6vh;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #333844;
+  padding: 0;
+  z-index: 1;
+  transform: translate3d(0, 0, 0.1px);
+}
+
+body {
+  color: white;
+  background-color: #333844;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  display: block;
+  margin: 30px 0;
+}
+
+p {
+  margin-top: 5px;
+  font-weight: 200;
+}
+
+#app {
+  position: relative;
+}
+
+.demo,
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 2000px;
+  position: relative;
+  z-index: 1;
+  transform: translate3d(0.1px, 0.1px, 0.1px);
+}
+
+.demo {
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
+.cards .card:nth-child(2),
+.cards .card:nth-child(2):before,
+.cards .card:nth-child(2):after {
+  animation-delay: 0.25s;
+}
+
+.cards .card:nth-child(3),
+.cards .card:nth-child(3):before,
+.cards .card:nth-child(3):after {
+  animation-delay: 0.5s;
+}
+
+.cards .card:nth-child(4),
+.cards .card:nth-child(4):before,
+.cards .card:nth-child(4):after {
+  animation-delay: 0.75s;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  animation: rubberBand 1.5s linear 3s 1;
+}
+
+.promo {
+  margin-top: 50px;
+}
+
+.promo img {
+  margin-top: 10px;
+  max-width: 80%;
+}
+
+p a {
+  color: cyan;
+}
+
+html,
+body,
+main {
+  min-height: 100%;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*# sourceMappingURL=mine.css.map */
