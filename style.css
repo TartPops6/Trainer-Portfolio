@@ -9,9 +9,10 @@
 }
 
 body {
-
     /* Colors Here */
     --color-black: #000000;
+    --color-black-20: #00000033;
+    --color-white: #FFFFFF;
 
     height: 100vh;
     background-image: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/img/Background.png);
@@ -19,10 +20,38 @@ body {
     background-attachment: fixed;
 }
 
-.container-banner {}
-
-.img-overlay {
+.container-banner {
     width: auto;
     height: 373px;
-    background: linear-gradient(to top, #00000033, #00000033), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
+    background: linear-gradient(to top, var(--color-black-20), var(--color-black-20)), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
+}
+
+.texts-container {
+    width: 824px;
+    height: 300.93;
+    text-align: center;
+    padding: 3%;
+}
+
+.texts-up {
+    width: 824px;
+    height: auto;
+    font-size: 64px;
+    color: var(--color-white);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.texts-bottom {
+    width: 824px;
+    height: auto;
+    font-size: 48px;
+    color: var(--color-white);
+    margin: auto;
+}
+
+.img-containter {
+    width: 480px;
+    height: auto;
+    background-image: url();
 }
