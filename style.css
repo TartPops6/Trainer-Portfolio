@@ -38,7 +38,7 @@ body {
 }
 
 .texts-up {
-  width: 717px;
+  width: 70%;
   height: auto;
   font-size: 64px;
   color: var(--color-white);
@@ -47,7 +47,7 @@ body {
 }
 
 .texts-bottom {
-  width: 750px;
+  width: 70%;
   height: auto;
   font-size: 45px;
   color: var(--color-white);
