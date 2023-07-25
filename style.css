@@ -21,14 +21,19 @@ body {
 }
 
 .container-banner {
-    width: auto;
-    height: 373px;
     background: linear-gradient(to top, var(--color-black-20), var(--color-black-20)), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
+    height: 373px;
+    width: 100%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .texts-container {
     width: 824px;
-    height: 300.93;
+    height: 300.93px;
     text-align: center;
     padding: 3%;
 }
@@ -50,8 +55,16 @@ body {
     margin: auto;
 }
 
-.img-containter {
+.img-container {
     width: 480px;
     height: auto;
-    background-image: url();
+    display: flex;
+    flex-direction: column;
+}
+
+.sprite-container {
+    position: relative; bottom:10px;
+    width: 626px;
+    height: 499px;
+    background-image: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Trainer%20Card/Given%20Sprite.png);
 }
