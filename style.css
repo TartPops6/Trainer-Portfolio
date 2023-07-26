@@ -21,8 +21,10 @@ body {
 
 .container-banner {
   background: linear-gradient(to top, var(--color-black-20), var(--color-black-20)), url(https://github.com/TartPops6/Trainer-Portfolio/blob/main/img/Banner-BG-Desktop.gif?raw=true) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 373px;
-  width: 100%;
+  width: auto;
   margin-bottom: 3%;
   display: flex;
   flex-direction: row;
