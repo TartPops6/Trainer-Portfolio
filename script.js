@@ -34,10 +34,7 @@ $cards
         var opc = `opacity: ${p_opc / 100};`
         var tf = `transform: rotateX(${ty}deg) rotateY(${tx}deg)`
         // need to use a <style> tag for psuedo elements
-        var style = `
-      .card:hover:before { ${grad_pos} }  /* gradient */
-      .card:hover:after { ${sprk_pos} ${opc} }   /* sparkles */ 
-    `
+        var style = `.card:hover:before { ${grad_pos} }  /* gradient */ .card:hover:after { ${sprk_pos} ${opc} }   /* sparkles */ `
         // set / apply css class and style
         $cards.removeClass("active");
         $card.removeClass("animated");
