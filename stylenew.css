@@ -135,17 +135,26 @@ body {
 }
 
 .footer {
+  display: flex;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 200px;
-  background-image: url(https://i.gifer.com/4FwT.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(236,153,95, 0.8);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   color: white;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
+.footer-msg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 /*Pokemon Cards*/
 :root {
