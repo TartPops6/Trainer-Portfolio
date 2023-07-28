@@ -108,7 +108,6 @@ body {
     margin: auto;
 }
 
-
 .card-container {
     justify-content: center;
     align-items: center;
@@ -116,6 +115,16 @@ body {
     width: 100%;
     height: 100%;
     margin: auto;
+    margin-bottom: 5%;
+}
+
+.combo-texts {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 100%
 }
 
 /*Pokemon Cards*/
@@ -140,7 +149,7 @@ body {
     --gengarfront: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Pokemons/Gengar.webp);
     --machamp1: #777777;
     --machamp2: #072F5F;
-    --machampfront: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Pokemons/Machamp.webp);;
+    --machampfront: url(https://raw.githubusercontent.com/TartPops6/Trainer-Portfolio/main/Pokemons/Machamp.webp);
   }
   
   .card {
@@ -192,6 +201,7 @@ body {
     --holo2: var(--togekiss2);
     --front: var(--togekissfront);
   }
+
   .card.garchomp {
     --holo1: var(--garchomp1);
     --holo2: var(--garchomp2);
